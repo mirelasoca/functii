@@ -1,17 +1,17 @@
-doctype 5
+doctype html
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/bootstrap.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/graph.css')
   body
+    script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
+    script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.98/jsxgraphcore.js')
   
     block content
     
-    script(type='javascript', src='/javascripts/jquery-1.9.1.js')
-    script(type='javascript', src='/javascripts/bootstrap.js')
-    script(src='/javascripts/compiler.js')
-    script(src='/javascripts/grapher.js')
-    script(src='/javascripts/sin.js')
+    script(type='text/javascript', src='/javascripts/bootstrap.js')
+    script(type='text/javascript', src='/javascripts/sin.js')
     
 
