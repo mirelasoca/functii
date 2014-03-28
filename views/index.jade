@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p.mama Welcome to Draw My Graph!! #{Express}
+    ul.nav.nav-tabs
+        li.active: a(href="/") Home
+        li: a(href="/about") About
+        li: a(href="www.google.com") Messages
+  img.stefan(src='/images/monkey.jpg')
+
+
+  canvas#canvas(width="300" , height="300")
+  form
+    | Equation:
+    input#equation(type='text', name='eq')
+    input#plot.btn.btn-warning(type='button', name='plot', value='Plot')
